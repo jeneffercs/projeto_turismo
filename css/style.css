@@ -1,4 +1,21 @@
-body{
+*{
     margin: 0;
-    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
 }
+
+h3{
+    text-align: center;
+}
+
+#container{
+   text-align: center;
+   padding: 20px;
+}
+
+#botao{
+    text-align: center;
+}
+
