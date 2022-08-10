@@ -1,21 +1,35 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: antiquewhite;
 }
 
-h3{
-    text-align: center;
+
+#grid-viagens{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
 }
 
-#container{
-   text-align: center;
-   padding: 20px;
+.figure-viagens{
+    border: 1px solid #000;
+    border-radius: 3px;
+
 }
 
-#botao{
-    text-align: center;
+.img-viagens{
+    width: 100%;
 }
 
+.figcaption-viagens{
+ padding: 10px;
+}
+
+.btn-comprar{
+    padding: 6px 12px;
+    margin: 10px auto;
+    display: grid;
+    background-color: beige;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
