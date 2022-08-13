@@ -60,7 +60,10 @@ try {
                     <td><?php echo $viagem ['Local'];?></td>
                     <td>R$<?php echo $viagem ['Valor'];?></td>
                     <td><?php echo $viagem ['Desc'];?></td>
-                    <td>Alterar</td>
+                    <td>
+                      <a href="alterar_viagens.php?id=<?php echo $viagem ['id'];?>">Alterar</a>
+                    </td>
+
                     <td>
                       <a href="../backend/_deletar_viagens.php?id=<?php echo $viagem ['id'];?>">Deletar</a>
                     </td>
