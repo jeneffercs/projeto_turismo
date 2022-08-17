@@ -32,3 +32,5 @@ header('location: ../admin/alterar_viagens.php?id='.$id);
 }catch(PDOException $erro){
     echo $erro -> getMessage();
 }
+
+?>
