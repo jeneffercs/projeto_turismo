@@ -11,9 +11,6 @@ try {
     $comando->execute();
 
     $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
-    
-
-
 } catch (PDOException $erro) {
     //exibe a msg de erro
     echo $erro->getMessage();
@@ -36,6 +33,11 @@ try {
 <body>
     <div id="container">
         <h3>Gerenciar Viagens</h3>
+        <hr>
+
+        <a href="cadastrar_viagens.html">Cadastrar Viagens</a>
+
+        <hr>
 
         <div id="tabela">
 
@@ -52,29 +54,29 @@ try {
                 </tr>
 
                 <?php
-                foreach($dados as $viagem):
+                foreach ($dados as $viagem) :
                 ?>
-                <tr>
-                    <td><?php echo $viagem ['id'];?></td>
-                    <td><?php echo $viagem ['Titulo'];?></td>
-                    <td><?php echo $viagem ['Local'];?></td>
-                    <td>R$<?php echo $viagem ['Valor'];?></td>
-                    <td><?php echo $viagem ['Desc'];?></td>
-                    <td>
-                      <a href="alterar_viagens.php?id=<?php echo $viagem ['id'];?>">Alterar</a>
-                    </td>
+                    <tr>
+                        <td><?php echo $viagem['id']; ?></td>
+                        <td><?php echo $viagem['Titulo']; ?></td>
+                        <td><?php echo $viagem['Local']; ?></td>
+                        <td>R$<?php echo $viagem['Valor']; ?></td>
+                        <td><?php echo $viagem['Desc']; ?></td>
+                        <td>
+                            <a href="alterar_viagens.php?id=<?php echo $viagem['id']; ?>">Alterar</a>
+                        </td>
 
-                    <td>
-                      <a href="../backend/_deletar_viagens.php?id=<?php echo $viagem ['id'];?>">Deletar</a>
-                    </td>
-                </tr>
-                <?php endforeach;?>
+                        <td>
+                            <a href="../backend/_deletar_viagens.php?id=<?php echo $viagem['id']; ?>">Deletar</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
             </table>
 
         </div>
     </div>
-     <?php 
-     ?>
+    <?php
+    ?>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <?php 
-include"conexao.php";
+include'../backend/conexao.php';
 
 try{
 
@@ -14,7 +14,13 @@ try{
 
     $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
 
-    var_dump($dados);
+    // var_dump($dados);
+    if($dados !=null){
+        header('location: ../admin/gerenciar_viagens.php');
+    }else{
+        echo "usuario ou senha invalidos";
+    }
+
 
 }catch(PDOException $erro){
     echo $erro ->getMessage();
