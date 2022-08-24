@@ -49,7 +49,7 @@ $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
 
         <h3>Alterar viagens</h3>
 
-        <form action="../backend/_alterar_viagens.php" method="post">
+        <form action="../backend/_alterar_viagens.php" method="post" enctype="multipart/form-data">
             <div id="grid-alterar">
 
                 <div>
@@ -73,6 +73,15 @@ $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
                     <label for="" >Valor</label>
                     <input type="text" name="Valor" id="Valor" value="<?php echo $dados[0]['Valor'];?>">
                 </div>
+
+                <div>
+                    
+                    <label for="" >Imagem</label>
+                    <input type="file" name="imagem" id="imagem" value="">
+                    
+                </div>
+                <img class="img-alterar" src="../img/upload/<?php echo $dados[0]['imagem'];?>" alt="imagem da viagem">
+
 
                 <div>
                     <label for="">Descrição</label>
