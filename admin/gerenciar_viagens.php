@@ -36,6 +36,7 @@ try {
         <hr>
 
         <a href="cadastrar_viagens.html">Cadastrar Viagens</a>
+        <a href="index.html">Sair</a>
 
         <hr>
 
