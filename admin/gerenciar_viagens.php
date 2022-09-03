@@ -35,8 +35,8 @@ try {
         <h3>Gerenciar Viagens</h3>
         <hr>
 
-        <a href="cadastrar_viagens.html">Cadastrar Viagens</a>
-        <a href="index.html">Sair</a>
+        <a href="cadastrar_viagens.php">Cadastrar Viagens</a>
+        <a href="../backend/logout.php">Sair</a>
 
         <hr>
 
